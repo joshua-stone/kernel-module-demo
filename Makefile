@@ -1,9 +1,9 @@
-KERNEL_HEADERS := /lib/modules/$(shell uname -r)/build
+KDIR := /lib/modules/$(shell uname -r)/build
 
 obj-m += kmodhello.o
 
 all:
-	make -C $(KERNEL_HEADERS) M=$(PWD) modules
+	make -C $(KDIR) M=$(PWD) modules
 
 clean:
 	make -C $(KERNEL_HEADERS) M=$(PWD) clean
