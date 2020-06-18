@@ -13,7 +13,6 @@ static void __exit hello_end(void)
 	printk(KERN_INFO "Goodbye World!\n"); 
 } 
 
-
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Joshua Stone");
 MODULE_DESCRIPTION("Hello World kernel module");
