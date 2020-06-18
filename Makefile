@@ -6,4 +6,4 @@ all:
 	make -C $(KDIR) M=$(PWD) modules
 
 clean:
-	make -C $(KERNEL_HEADERS) M=$(PWD) clean
+	make -C $(KDIR) M=$(PWD) clean
